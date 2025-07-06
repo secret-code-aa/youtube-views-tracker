@@ -1,0 +1,6 @@
+# Google Sheets ID (從 Google Sheets 網址中複製)
+SPREADSHEET_ID=your_spreadsheet_id_here
+
+# 可選：自訂更新頻率
+# UPDATE_FREQUENCY=weekly  # daily, weekly, monthly
+# UPDATE_TIME=09:00        # 24小時制 

@@ -1,0 +1,8 @@
+# YouTube 影片列表
+# 格式：影片URL|影片標題（可選）
+# 範例：
+# https://www.youtube.com/watch?v=dQw4w9WgXcQ|我的影片標題
+# https://www.youtube.com/watch?v=9bZkp7q19f0|另一個影片
+
+# 請在下面加入你的影片 URL：
+# https://www.youtube.com/watch?v=你的影片ID|你的影片標題 

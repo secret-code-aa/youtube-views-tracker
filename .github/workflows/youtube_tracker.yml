@@ -1,0 +1,40 @@
+name: YouTube Views Tracker
+
+on:
+  schedule:
+    # 每週一上午 9:00 執行
+    - cron: '0 9 * * 1'
+  workflow_dispatch:  # 允許手動觸發
+
+jobs:
+  track-youtube-views:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.8'
+    
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
+    
+    - name: Create .env file
+      run: |
+        echo "SPREADSHEET_ID=${{ secrets.SPREADSHEET_ID }}" > .env
+    
+    - name: Create credentials.json
+      run: |
+        echo '${{ secrets.GOOGLE_CREDENTIALS }}' > credentials.json
+    
+    - name: Create videos.txt
+      run: |
+        echo '${{ secrets.VIDEOS_LIST }}' > videos.txt
+    
+    - name: Run YouTube tracker
+      run: |
+        python manual_update.py 
