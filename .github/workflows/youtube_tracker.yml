@@ -2,8 +2,8 @@ name: YouTube Views Tracker
 
 on:
   schedule:
-    # 每分鐘執行一次（POC 測試用）
-    - cron: '*/1 * * * *'
+    # 每小時執行一次
+    - cron: '0 * * * *'
   workflow_dispatch:  # 允許手動觸發
 
 jobs:
@@ -38,10 +38,6 @@ jobs:
     - name: Create videos.txt
       run: |
         echo '${{ secrets.VIDEOS_LIST }}' > videos.txt
-
-    - name: Create token.json
-      run: |
-        echo '${{ secrets.GOOGLE_TOKEN }}' > token.json
     
     - name: Run YouTube tracker
       run: |
