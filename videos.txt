@@ -6,3 +6,8 @@
 
 # 請在下面加入你的影片 URL：
 # https://www.youtube.com/watch?v=你的影片ID|你的影片標題 
+https://www.youtube.com/watch?v=gY4_FnBU3mQ|CC400WIntro
+https://www.youtube.com/watch?v=t3vkHYXyAg4&t=7s|CC400WInstall
+https://www.youtube.com/watch?v=ejjYusi0A5g&list=PLbeBr03sf2pX24nCQQfn6W22E0xtIzh41|BC500/TC500Intro
+https://www.youtube.com/watch?v=bARrn4t58LI&list=PLbeBr03sf2pX24nCQQfn6W22E0xtIzh41&index=3|BC500Install
+https://www.youtube.com/watch?v=lwDKRsDTHgY&list=PLbeBr03sf2pX24nCQQfn6W22E0xtIzh41&index=4|TC500Install
