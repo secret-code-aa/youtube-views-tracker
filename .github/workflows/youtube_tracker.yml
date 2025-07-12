@@ -2,8 +2,8 @@ name: YouTube Views Tracker
 
 on:
   schedule:
-    # 每小時執行一次
-    - cron: '0 * * * *'
+    # 每天凌晨 1 點執行一次
+    - cron: '0 1 * * *'
   workflow_dispatch:  # 允許手動觸發
 
 jobs:
